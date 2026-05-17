@@ -18,3 +18,4 @@ while True:  ## Loop para assegurar que os dados inseridos são válidos, repete
 
   except ValueError:
     print("Insira valores válidos para os dados requisitados ")
+
