@@ -16,3 +16,23 @@ while True: ## Loop para garantir que o usuário insira valores válidos
     print("Insira valores válidos para os dados requisitados ")
 
 
+Valor_euro = 5.9
+Valor_hospedagem_reais = Custo_hospedagem * Valor_euro 
+Custo_hospedagem_reais = Valor_hospedagem_reais * Duracao_viagem ## Cálculo de conversão e custo em reais
+
+Custo_total_viagem = Custo_passagem + Custo_hospedagem_reais ##Cálculo do custo total da viagem
+
+if Custo_total_viagem <= Orcamento_disponivel: ##Condicional que define se o orçamento é suficiente dado custo
+  situacao = "Orçamento suficiente"
+else:  situacao = "Orçamento insuficiente"
+
+Viagem_viavel = (Custo_total_viagem <= Orcamento_disponivel) and Duracao_viagem > 0 ##Verificação de viabilidade
+
+if Viagem_viavel:
+  resultado = "Viagem possível"
+else:  resultado = "Viagem não possível"
+
+Sobra_ou_Precisa = Orcamento_disponivel - Custo_total_viagem ##Cálculo de sobra ou valor necessário para realizar a viagem
+
+
+
