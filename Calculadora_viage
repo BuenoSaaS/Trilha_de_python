@@ -1,3 +1,5 @@
+
+
 while True:  ## Loop para assegurar que os dados inseridos são válidos, repete o processo em caso de valores negativos ou inválidos
   try:
     Orcamento_disponivel = float(input("Insira o valor disponivel para a viagem ")) 
